@@ -3,7 +3,7 @@ import { Moon, Sun, Github, Linkedin, Mail, ExternalLink, Code, Palette, Zap, Ch
 import './App.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -39,8 +39,8 @@ function App() {
       title: 'Aerial Ascend',
       description: 'Aerial Ascends is an airline management project designed to simplify air travel with features like smart booking, real-time flight updates, and cost-efficient ticketing for a seamless passenger experience.',
       tech: ['React', 'Node.js', 'MongoDB', 'Razorpay','Gemini','Qdrant','Cloudinary'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/PrashantGoyal20/Aerial-Ascend',
+      live: 'https://aerialascend-git-main-prashantgoyal20s-projects.vercel.app/',
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
@@ -48,7 +48,7 @@ function App() {
       title: 'Job Dekho',
       description: 'Job Dekho – A job discovery and application platform designed to simplify recruitment by connecting job seekers with employers. Features include user-friendly job search, application tracking, and streamlined employer postings.',
       tech: ['React', 'Node.js', 'LiveKit.io', 'MongoDB','Gemini','Qdrant','Cloudinary'],
-      github: '#',
+      github: 'https://github.com/PrashantGoyal20/Job-Dekho',
       live: "https://job-dekho-git-master-prashantgoyal20s-projects.vercel.app/",
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
