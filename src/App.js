@@ -23,6 +23,36 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  const education = [
+    {
+      degree: "Bachelor of Technology",
+      major: "Electrical Engineering",
+      institution: "Maulana Azad National Institute of Technology",
+      location: "Bhopal, India",
+      year: "2022 - 2026",
+      grade: "7.92 CGPA",
+      icon: "🎓"
+    },
+    {
+      degree: "Higher Secondary School Certificate (C.B.S.E)",
+      major: "Science (PCM)",
+      institution: "K.L. International School",
+      location: "Meerut, India", 
+      year: "2021",
+      grade: "96.2%",
+      icon: "📚"
+    },
+    {
+      degree: "Secondary School Certificate (C.B.S.E)",
+  
+      institution: "K.L. International School",
+      location: "Meerut, India", 
+      year: "2019",
+      grade: "95.4%",
+      icon: "📚"
+    }
+  ];
+
    const skills = [
     { name: 'React', level: 95, icon: '⚛️' },
     { name: 'JavaScript', level: 90, icon: '🟨' },
@@ -81,7 +111,7 @@ function App() {
 
       <header className="header">
         <nav className="nav">
-          <a href="#" className="logo"><span>PORTFOLIO</span></a>
+          <div className="logo"><span>PORTFOLIO</span></div>
           <button className="theme-toggle" onClick={toggleTheme}>
             {darkMode ? <Sun size={24}  color='white' /> : <Moon size={24}/>}
           </button>
@@ -159,6 +189,38 @@ function App() {
         </div>
       </section>
 
+      <section id="education" className="section">
+        <h2 className="section-title">Education</h2>
+        <div className="education-grid">
+          {education.map((edu, index) => (
+            <div key={index} className="education-item">
+              <div className="education-header">
+                <div className="education-icon">{edu.icon}</div>
+                <div className="education-info">
+                  <h3 className="education-degree">{edu.degree}</h3>
+                  <p className="education-major">{edu.major}</p>
+                  <p className="education-institution">{edu.institution}</p>
+                  <p className="education-location">📍 {edu.location}</p>
+                  
+                  <div className="education-meta">
+                    <div className="education-year">
+                      <span>📅</span>
+                      {edu.year}
+                    </div>
+                    <div className="education-grade">
+                      <span>🏆</span>
+                      {edu.grade}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section id="projects" className="section">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
@@ -208,7 +270,7 @@ function App() {
               <div className="contact-icon">
                 <Mail size={24} />
               </div>
-              Email Me
+              Email
             </a>
             <a href="https://github.com/PrashantGoyal20" className="contact-link">
               <div className="contact-icon">
@@ -230,9 +292,9 @@ function App() {
         <div className="footer-content">
           <div className="footer-links">
             <a href="#about" className="footer-link">About Me</a>
+            <a href="#education" className="footer-link">Education</a>
             <a href="#projects" className="footer-link">Projects</a>
             <a href="#contact" className="footer-link">Contact</a>
-            <a href="#" className="footer-link">Resume</a>
           </div>
           <p>&copy; 2025 Prashant Goyal. Built with ❤️ and Hardwork</p>
         </div>

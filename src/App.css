@@ -127,6 +127,7 @@
    position: relative;
    overflow: hidden;
    font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
  }
  .logo img{
   height: 3.8rem;
@@ -521,6 +522,144 @@
    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
    animation: skillShimmer 2s infinite;
  }
+
+ .education-grid {
+          display: grid;
+          gap: 3rem;
+          animation: fadeInUp 1s ease;
+        }
+
+        .education-item {
+          background: var(--bg-card);
+          padding: 2.5rem;
+          border-radius: 20px;
+          box-shadow: var(--shadow);
+          border: 1px solid var(--border);
+          transition: all 0.4s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .education-item::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+          transform: translateX(-100%);
+          transition: transform 0.6s ease;
+        }
+
+        .education-item:hover::before {
+          transform: translateX(0);
+        }
+
+        .education-item:hover {
+          transform: translateY(-8px) scale(1.02);
+          box-shadow: var(--shadow-lg);
+        }
+
+        .education-header {
+          display: flex;
+          align-items: flex-start;
+          gap: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .education-icon {
+          font-size: 2.5rem;
+          animation: educationIconFloat 3s ease-in-out infinite;
+          flex-shrink: 0;
+        }
+
+        .education-info {
+          flex: 1;
+        }
+
+        .education-degree {
+          font-size: 1.4rem;
+          font-weight: 800;
+          color: var(--text-primary);
+          margin-bottom: 0.5rem;
+        }
+
+        .education-major {
+          font-size: 1.1rem;
+          color: var(--accent);
+          font-weight: 600;
+          margin-bottom: 0.75rem;
+        }
+
+        .education-institution {
+          font-size: 1rem;
+          color: var(--text-secondary);
+          font-weight: 600;
+          margin-bottom: 0.25rem;
+        }
+
+        .education-location {
+          font-size: 0.9rem;
+          color: var(--text-muted);
+          margin-bottom: 0.75rem;
+        }
+
+        .education-meta {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .education-year,
+        .education-grade {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-weight: 600;
+          color: var(--text-secondary);
+        }
+
+        .education-grade {
+          color: var(--accent);
+        }
+
+        .education-highlights {
+          margin-top: 1.5rem;
+        }
+
+        .highlights-title {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: var(--text-primary);
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .highlights-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.75rem;
+        }
+
+        .highlight-tag {
+          background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+          border: 1px solid var(--border);
+          color: var(--text-secondary);
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.85rem;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .highlight-tag:hover {
+          background: var(--accent);
+          color: white;
+          transform: translateY(-2px) scale(1.05);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
  .projects-grid {
    display: grid;
