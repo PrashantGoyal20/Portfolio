@@ -280,6 +280,8 @@
 
  .cta-container {
    animation: slideInUp 1s ease 0.9s both;
+   position: relative;
+   bottom: 2rem;
  }
 
  .cta-button {
@@ -334,8 +336,9 @@
 
  .scroll-indicator {
    position: absolute;
-   bottom: 2rem;
+   bottom: 0.2rem;
    left: 50%;
+   z-index: 100;
    transform: translateX(-50%);
    animation: bounceGlow 2s infinite;
    cursor: pointer;
@@ -700,6 +703,10 @@
    justify-content: center;
    gap: 2.5rem;
    margin-top: 3rem;
+ }
+
+ .skill-img{
+  height: 25px;
  }
 
  .contact-link {

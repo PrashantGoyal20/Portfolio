@@ -29,6 +29,7 @@ function App() {
     { name: 'Node.js', level: 85, icon: '🟢' },
     { name: 'AI/ML', level: 80, icon: '🔷' },
     { name: 'MongoDB', level: 75, icon: '🍃' },
+    { name: 'JAVA', level: 90, icon: <img className='skill-img' src='./java.png'/> },
     { name: 'Python', level: 70, icon: '🐍' }
   ];
 
@@ -97,7 +98,7 @@ function App() {
             >
               <div className="profile-glow"></div>
               <div className="profile-front">👨‍💻</div>
-              <div className="profile-back">🚀</div>
+              <img className="profile-back" src='./logo.svg'/>
             </div>
           </div>
 
@@ -129,30 +130,13 @@ function App() {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I'm a passionate full-stack web developer with 3+ years of experience in creating
-              dynamic and responsive web applications. I specialize in React, Node.js, and modern
-              JavaScript frameworks that power today's digital experiences.
+              I'm a  a passionate and detail-oriented software developer with strong expertise in MERN stack development, React applications, and backend integrations. With hands-on experience in building full-stack web applications, I specialize in creating scalable, efficient, and user-friendly solutions. I enjoy solving real-world problems with technology and continuously learning modern tools and frameworks.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, contributing to
-              open-source projects, or sharing knowledge with the developer community. I believe
-              in writing clean, maintainable code that solves real-world problems.
+              Beyond coding, I bring strong problem-solving skills, adaptability, and the ability to collaborate effectively in team environments. My goal is to contribute to innovative projects, deliver high-quality results, and grow as a developer while adding value to the organization.
             </p>
 
-            <div className="about-stats">
-              <div className="stat-item">
-                <span className="stat-number">3+</span>
-                <span className="stat-label">Years Experience</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">50+</span>
-                <span className="stat-label">Projects Completed</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">∞</span>
-                <span className="stat-label">Coffee Cups</span>
-              </div>
-            </div>
+            
           </div>
 
           <div className="skills-container">
