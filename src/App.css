@@ -1073,4 +1073,52 @@
    .about-stats {
      grid-template-columns: 1fr;
    }
+   .project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+ }
+
+  @media (max-width: 388px) {
+   .about-grid {
+     grid-template-columns: 1fr;
+     gap: 3rem;
+   }
+
+   .contact-links {
+     flex-direction: column;
+     align-items: center;
+     gap: 1.5rem;
+   }
+
+   .nav {
+     padding: 0 1rem;
+   }
+
+   .hero{
+    max-width: 100vw;
+   }
+
+   .hero-content {
+     padding: 1rem;
+   }
+
+   .hero-title::after {
+     position: relative;
+     right: 0;
+     margin-left: 1rem;
+   }
+
+   .about-stats {
+     grid-template-columns: 1fr;
+   }
+
+   .projects-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   
  }

@@ -48,7 +48,7 @@ function App() {
       description: 'MERN-stack Job search portal with built-in live interview taking system',
       tech: ['React', 'Node.js', 'LiveKit.io', 'MongoDB','Gemini','Qdrant','Cloudinary'],
       github: '#',
-      live: '#',
+      live: "https://job-dekho-git-master-prashantgoyal20s-projects.vercel.app/",
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
     {
