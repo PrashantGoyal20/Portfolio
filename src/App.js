@@ -79,10 +79,9 @@ function App() {
         }}
       ></div>
 
-      {/* Header */}
       <header className="header">
         <nav className="nav">
-          <a href="#" className="logo"><span>Portfolio</span></a>
+          <a href="#" className="logo"><span>PORTFOLIO</span></a>
           <button className="theme-toggle" onClick={toggleTheme}>
             {darkMode ? <Sun size={24}  color='white' /> : <Moon size={24}/>}
           </button>
@@ -124,13 +123,12 @@ function App() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="section">
+      <section id="about" className="section about">
         <h2 className="section-title">About Me</h2>
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I'm a  a passionate and detail-oriented software developer with strong expertise in MERN stack development, React applications, and backend integrations. With hands-on experience in building full-stack web applications, I specialize in creating scalable, efficient, and user-friendly solutions. I enjoy solving real-world problems with technology and continuously learning modern tools and frameworks.
+              I'm a passionate and detail-oriented software developer with strong expertise in MERN stack development, React applications, and backend integrations. With hands-on experience in building full-stack web applications, I specialize in creating scalable, efficient, and user-friendly solutions. I enjoy solving real-world problems with technology and continuously learning modern tools and frameworks.
             </p>
             <p>
               Beyond coding, I bring strong problem-solving skills, adaptability, and the ability to collaborate effectively in team environments. My goal is to contribute to innovative projects, deliver high-quality results, and grow as a developer while adding value to the organization.
@@ -161,7 +159,6 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="section">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
@@ -198,7 +195,6 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="section contact">
         <h2 className="section-title">Let's Work Together</h2>
         <div className="contact-content">
@@ -230,7 +226,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-links">
@@ -239,7 +234,7 @@ function App() {
             <a href="#contact" className="footer-link">Contact</a>
             <a href="#" className="footer-link">Resume</a>
           </div>
-          <p>&copy; 2025 Prashant Goyal. Built with React and ❤️</p>
+          <p>&copy; 2025 Prashant Goyal. Built with ❤️ and Hardwork</p>
         </div>
       </footer>
     </div>

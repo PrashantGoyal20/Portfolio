@@ -126,6 +126,7 @@
    text-decoration: none;
    position: relative;
    overflow: hidden;
+   font-size: 20px;
  }
  .logo img{
   height: 3.8rem;
@@ -295,6 +296,14 @@
    margin: 0 1rem 1rem 0;
    position: relative;
    overflow: hidden;
+ }
+
+ .about{
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  top: 2rem;
  }
 
  .cta-button::before {
@@ -601,6 +610,7 @@
    color: var(--text-secondary);
    margin-bottom: 2rem;
    line-height: 1.7;
+   text-align: justify;
  }
 
  .tech-stack {
