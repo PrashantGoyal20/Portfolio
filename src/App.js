@@ -37,7 +37,7 @@ function App() {
     {
       thumbnail:"./Aerial-Ascends.png",
       title: 'Aerial Ascend',
-      description: 'MERN-stack flight booking website with full payment integration system using Razorpay',
+      description: 'Aerial Ascends is an airline management project designed to simplify air travel with features like smart booking, real-time flight updates, and cost-efficient ticketing for a seamless passenger experience.',
       tech: ['React', 'Node.js', 'MongoDB', 'Razorpay','Gemini','Qdrant','Cloudinary'],
       github: '#',
       live: '#',
@@ -46,7 +46,7 @@ function App() {
     {
       thumbnail:"./JobDekho.png",
       title: 'Job Dekho',
-      description: 'MERN-stack Job search portal with built-in live interview taking system',
+      description: 'Job Dekho – A job discovery and application platform designed to simplify recruitment by connecting job seekers with employers. Features include user-friendly job search, application tracking, and streamlined employer postings.',
       tech: ['React', 'Node.js', 'LiveKit.io', 'MongoDB','Gemini','Qdrant','Cloudinary'],
       github: '#',
       live: "https://job-dekho-git-master-prashantgoyal20s-projects.vercel.app/",
@@ -55,7 +55,7 @@ function App() {
     {
       thumbnail:"./Smart-Prep.png",
       title: 'Smart Prep',
-      description: 'Interactive interview taking platform',
+      description: 'Smart Prep is an AI-powered preparation platform designed to help students and professionals practice interviews.',
       tech: ['React', 'Node.js', 'Gemini','Google-Cloud'],
       github: '#',
       live: '#',
@@ -82,7 +82,7 @@ function App() {
       {/* Header */}
       <header className="header">
         <nav className="nav">
-          <a href="#" className="logo"><img src='./logo.svg'/></a>
+          <a href="#" className="logo"><span>Portfolio</span></a>
           <button className="theme-toggle" onClick={toggleTheme}>
             {darkMode ? <Sun size={24}  color='white' /> : <Moon size={24}/>}
           </button>
@@ -97,8 +97,8 @@ function App() {
               onClick={() => document.querySelector('.profile-photo').classList.toggle('flipped')}
             >
               <div className="profile-glow"></div>
-              <div className="profile-front">👨‍💻</div>
-              <img className="profile-back" src='./logo.svg'/>
+              <div className="profile-back">👨‍💻</div>
+              <img className="profile-front" src='./logo.svg'/>
             </div>
           </div>
 
@@ -173,7 +173,7 @@ function App() {
                   <img className='thumbnail' src={project.thumbnail}/>
                 </div>
                 <div className="project-icon">
-                  {index === 0 ? '🛒' : index === 1 ? '✅' : '🌤️'}
+                  {index === 0 ? '✈️' : index === 1 ? '🏢' : '🧑‍💼'}
                 </div>
               </div>
               <div className="project-content">
@@ -234,7 +234,7 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-links">
-            <a href="#about" className="footer-link">About</a>
+            <a href="#about" className="footer-link">About Me</a>
             <a href="#projects" className="footer-link">Projects</a>
             <a href="#contact" className="footer-link">Contact</a>
             <a href="#" className="footer-link">Resume</a>

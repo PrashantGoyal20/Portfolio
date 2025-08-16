@@ -179,6 +179,7 @@
    padding: 2rem;
    animation: heroEntry 1.2s ease;
    position: relative;
+   justify-content: center;
  }
 
  .profile-container {
@@ -252,14 +253,7 @@
    position: relative;
  }
 
- .hero-title::after {
-   content: '👋';
-   position: absolute;
-   right: -60px;
-   top: 0;
-   font-size: 0.6em;
-   animation: wave 1s ease-in-out infinite;
- }
+ 
 
  .hero-subtitle {
    font-size: 1.8rem;
@@ -374,7 +368,9 @@
    border-radius: 2px;
    animation: expandLine 1s ease 0.5s both;
  }
-
+ .about-text{
+  text-align: justify;
+ }
  .about-grid {
    display: grid;
    grid-template-columns: 1fr 1fr;
