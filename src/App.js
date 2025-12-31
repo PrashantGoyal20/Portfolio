@@ -64,6 +64,19 @@ function App() {
   ];
 
   const projects = [
+
+    
+
+    {
+      thumbnail:"./findr.png",
+      title: 'Findr.AI',
+      description: 'Findr is an AI-powered lost-and-found platform that helps people recover lost items using image and text-based search.',
+      tech: ['Next.js', 'Flask', 'Open-Clip','Qdrant','Supabase','PyTorch','Cloudinary','HuggingFace'],
+      github: 'https://github.com/PrashantGoyal20/FINDR.AI',
+      live: 'https://findr-ai-nine.vercel.app/',
+      gradient: 'linear-gradient(135deg, #af4ffeff 0%, #f6fe00ff 100%)'
+    },
+
     {
       thumbnail:"./Aerial-Ascends.png",
       title: 'Aerial Ascend',
@@ -72,6 +85,17 @@ function App() {
       github: 'https://github.com/PrashantGoyal20/Aerial-Ascend',
       live: 'https://aerialascend-git-main-prashantgoyal20s-projects.vercel.app/',
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+    },
+
+    
+    {
+      thumbnail:"./Memora.png",
+      title: 'Memora',
+      description: 'Visual memory system where images are processed through a multi-stage computer vision pipeline to extract objects, spatial relationships, and context. Instead of storing just embeddings, I store structured visual knowledge in a graph, which allows users to access there memories through simple queries.',
+      tech: ['Next.js', 'Flask', 'Open-Clip','Qdrant','Supabase','PyTorch','Cloudinary','Ultralytics','OpenCV'],
+      github: 'https://github.com/PrashantGoyal20/Memora',
+      live: 'https://memora-tan.vercel.app/',
+      gradient: 'linear-gradient(135deg, #c9e418ff 0%, #a60c97ff 100%)'
     },
     {
       thumbnail:"./JobDekho.png",
@@ -82,13 +106,15 @@ function App() {
       live: "https://job-dekho-git-master-prashantgoyal20s-projects.vercel.app/",
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
+    
+ 
     {
-      thumbnail:"./Smart-Prep.png",
+      thumbnail:"Smart-Prep.png",
       title: 'Smart Prep',
       description: 'Smart Prep is an AI-powered preparation platform designed to help students and professionals practice interviews.',
       tech: ['React', 'Node.js', 'Gemini','Google-Cloud'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/PrashantGoyal20/Smart-Prep',
+      live: 'https://smart-prep-rho.vercel.app/',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     }
   ];
@@ -221,6 +247,39 @@ function App() {
         </div>
       </section>
 
+
+       <section id="Acheivement" className="section">
+        <h2 className="section-title">Education</h2>
+        <div className="education-grid">
+          {education.map((edu, index) => (
+            <div key={index} className="education-item">
+              <div className="education-header">
+                <div className="education-icon">{edu.icon}</div>
+                <div className="education-info">
+                  <h3 className="education-degree">{edu.degree}</h3>
+                  <p className="education-major">{edu.major}</p>
+                  <p className="education-institution">{edu.institution}</p>
+                  <p className="education-location">📍 {edu.location}</p>
+                  
+                  <div className="education-meta">
+                    <div className="education-year">
+                      <span>📅</span>
+                      {edu.year}
+                    </div>
+                    <div className="education-grade">
+                      <span>🏆</span>
+                      {edu.grade}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section id="projects" className="section">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
@@ -232,7 +291,7 @@ function App() {
                   <img className='thumbnail' src={project.thumbnail}/>
                 </div>
                 <div className="project-icon">
-                  {index === 0 ? '✈️' : index === 1 ? '🏢' : '🧑‍💼'}
+                  {index === 0 ? '🔍 ': index === 1 ?'✈️' : index === 2 ?'📸' : index === 3 ? '🏢': '🧑‍💼'}
                 </div>
               </div>
               <div className="project-content">
