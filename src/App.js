@@ -112,7 +112,7 @@ function App() {
       thumbnail:"./Smart-Prep.png",
       title: 'Smart Prep',
       description: 'Smart Prep is an AI-powered preparation platform designed to help students and professionals practice interviews.',
-      tech: ['React', 'Node.js', 'Gemini','Google-Cloud'],
+      tech: ['React', 'Node.js', 'Gemini','HuggingFace','FastAPI','MongoDB'],
       github: 'https://github.com/PrashantGoyal20/Smart-Prep',
       live: 'https://smart-prep-git-main-prashantgoyal20s-projects.vercel.app/',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
