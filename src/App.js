@@ -248,7 +248,7 @@ function App() {
       </section>
 
 
-       <section id="Acheivement" className="section">
+       {/* <section id="Acheivement" className="section">
         <h2 className="section-title">Education</h2>
         <div className="education-grid">
           {education.map((edu, index) => (
@@ -278,7 +278,7 @@ function App() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section id="projects" className="section">
         <h2 className="section-title">Featured Projects</h2>
