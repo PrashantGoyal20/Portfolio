@@ -90,7 +90,7 @@ function App() {
     
     {
       thumbnail:"./Memora.png",
-      title: 'Memora',
+      title: 'Memora (Still in Development)',
       description: 'Visual memory system where images are processed through a multi-stage computer vision pipeline to extract objects, spatial relationships, and context. Instead of storing just embeddings, I store structured visual knowledge in a graph, which allows users to access there memories through simple queries.',
       tech: ['Next.js', 'Flask', 'Open-Clip','Qdrant','Supabase','PyTorch','Cloudinary','Ultralytics','OpenCV'],
       github: 'https://github.com/PrashantGoyal20/Memora',
